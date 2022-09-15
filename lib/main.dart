@@ -45,10 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           final plugin = SpeechRecognizerPlugin();
-          plugin.speechToText(language: 'km-KH', description: 'សូមនិយាយនៅទីនេះ',
-          onSuccess: (result) {
-            print(result);
-          });
+          plugin.speechToText(language: 'km-KH', description: 'សូមនិយាយនៅទីនេះ');
         },
         child: Icon(Icons.face),
       ),
